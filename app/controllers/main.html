@@ -1,0 +1,19 @@
+﻿<section id="main-view" class="mainbar k-content nopadding " style="margin:0px;" data-ng-controller="mainCtrl as vm">
+
+    <div>
+        <span style="color:blue">
+            <a title="show main 1" ng-click="vm.showPage()">show main 1</a>
+        </span>
+    </div>
+    <div ng-show="vm.showMain1" id="div1" class="row">
+        <p>{{vm.fname}}&nbsp;{{vm.lname}}</p>
+    </div>
+    <div ng-show="vm.showMain2" id="div2" class="row">
+        <data-customer-detail></data-customer-detail>
+        <!--<p>{{vm.fname}}&nbsp;{{vm.lname}}</p>-->
+    </div>
+    <div ng-show="vm.showMain3" id="div3" class="row">
+        <p>{{vm.fname}}&nbsp;{{vm.lname}}</p>
+    </div>
+
+</section>
